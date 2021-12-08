@@ -130,7 +130,7 @@ def is_valid():
     response = {'valid': blockchain.is_chain_valid(blockchain.chain)}
     return jsonify(response), 200
 
-@app.route('/add_transaction', method= ['POST'])
+@app.route('/add_transaction', methods = ['POST'])
 def add_transaction():
     json = requests.get_json()
     transaction_keys = ['sender', 'receiver', 'amount']
@@ -140,7 +140,7 @@ def add_transaction():
     response = {'message': f'This transaction will be added to Block {index}'}   
     return jsonify(response), 201
 
-@app.route('/connect_node', method= ['POST'])
+@app.route('/connect_node', methods = ['POST'])
 def connect_node():
     json = request.get.json()
     nodes = json.get('nodes')
@@ -152,7 +152,7 @@ def connect_node():
                 'total_nodes': list(blockchain.nodes)}
     return jsonify(response), 201
 
-@app.route('/replace_chain', method=['GET'])
+@app.route('/replace_chain', methods =['GET'])
 def replace_chain():
     is_chain_replaced = blockchain.replace_chain()
     if is_chain_replaced:
