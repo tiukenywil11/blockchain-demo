@@ -12,4 +12,9 @@ contract kennycoin_ico {
 
     //Introducing the total number of kennycoins that have been bought by the investors
     uint public total_kennycoins_bought = 0;
+
+    // Mapping from the investor address to its equity is Kennycoin and USD
+    mapping(address => uint) equity_kennycoins;
+    mapping(address => uint) equity_usd;
+
 }
