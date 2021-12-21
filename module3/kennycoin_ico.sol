@@ -17,4 +17,9 @@ contract kennycoin_ico {
     mapping(address => uint) equity_kennycoins;
     mapping(address => uint) equity_usd;
 
+    modifier can_buy_kennycoins(uint usd_invested) {
+        require(usd_invested * usd_to_kennycoins + total_kennycoins_bought <= max_kennycoins);
+        _;    
+    }
+
 }
