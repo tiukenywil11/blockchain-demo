@@ -22,4 +22,12 @@ contract kennycoin_ico {
         _;    
     }
 
+    function equity_in_kennycoins(address investor) external constant returns (uint) {
+        return equity_kennycoins[investor];
+    }
+
+    function equity_in_usd(address investor) external constant returns (uint) {
+        return equity_usd[investor];
+    }
+}
 }
