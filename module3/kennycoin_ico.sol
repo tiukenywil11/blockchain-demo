@@ -29,5 +29,13 @@ contract kennycoin_ico {
     function equity_in_usd(address investor) external constant returns (uint) {
         return equity_usd[investor];
     }
-}
+
+    // Buying kennycoins
+    function buy_kennycoins(address investor, uint usd_invested) external 
+    can_buy_kennycoins(usd_invested) {
+        uint kennycoins_bought = usd_invested * usd_to_kennycoins;
+        equity_kennycoins[investor] += kennycoins_bought;
+        equity_usd[investor] = equity_kennycoins[investor] / 1000;
+        total_kennycoins_bought += total_kennycoins_bought;
+    }
 }
