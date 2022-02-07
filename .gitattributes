@@ -1,0 +1,2 @@
+*.zip linguist-vendored
+**/etherwallet-mercury/** linguist-vendored
