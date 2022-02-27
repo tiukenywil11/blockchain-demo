@@ -1,9 +1,9 @@
-# How to deploy and comsume blockchain API
+# How to deploy and interact with the smart contract
 
 ## Install the following
 - Ganache (https://trufflesuite.com/ganache/index.html)
 
-## Basic walkthrough of how this blockchain would work.
+## Basic walkthrough of how this smart contract would work.
 
 ### How to deploy the contract
 Basic walkthrough of how this blockchain would work.
