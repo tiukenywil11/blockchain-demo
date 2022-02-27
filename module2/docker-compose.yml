@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+
+  kennycoin-demo-5001:
+    image: kennycoin-demo-5001
+    build:
+      context: ./node_port_5001
+      dockerfile: Dockerfile
+    ports:
+      - 5001:5001
+      
+  kennycoin-demo-5002:
+    image: kennycoin-demo-5002
+    build:
+      context: ./node_port_5002
+      dockerfile: Dockerfile
+    ports:
+      - 5002:5002
+     
+  kennycoin-demo-5003:
+    image: kennycoin-demo-5003
+    build:
+      context: ./node_port_5003
+      dockerfile: Dockerfile
+    ports:
+      - 5003:5003
