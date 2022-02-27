@@ -21,7 +21,7 @@ These are the available API endpoints:
 - [GET] http://localhost:<port>/get_chain : Gets the full blockchain.
 - [GET] http://localhost:<port>/replace_chain : Replaces the chain with the longest chain in the network.
 
-# How to used
+# How to use
 Basic walkthrough of how this blockchain would work.
 1. Check the latest blockchain via get request 'get_chain'.
 2. Connect nodes to each other via post request 'connect_node'.
